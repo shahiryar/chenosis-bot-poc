@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JCAA Chatbot</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <link rel="icon" type="image/x-icon" href="./chenosis-logo.jpeg">
+
+</head>
+<body>
+    <df-messenger
+  project-id="abacus-chatbot"
+  agent-id="83dfa9f1-d34d-47d6-abe9-6968213159d2"
+      language-code="en"
+        allow-feedback="all"
+      max-query-length="-1">
+      <df-messenger-chat
+       chat-title="Chenosis Chatbot" bot-writing-text="typing ..." 
+        placeholder-text="How may I help you?" bot-actor-image="human1.png" user-actor-image="human_user.png"
+          chat-title-icon="chenosis-logo.png">
+      </df-messenger-chat>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+          --df-messenger-titlebar-title-font-size:24px;      
+          --df-messenger-titlebar-icon-height:45px;
+          --df-messenger-titlebar-icon-width:45px;
+        --df-messenger-message-bot-background:#c4f2c8;
+          --df-messenger-titlebar-font-color:#0369BB;
+          --df-messenger-send-icon-color-hover:#0b57d0;
+          --df-messenger-titlebar-subtitle-font-weight:1100;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+      }
+
+    </style>
+</body>
+</html>
